@@ -7,6 +7,172 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
+    <style>
+        /* Dung chung cho ca website -global */
+*{ /*selector nay lay het tat ca cac the HTML*/
+    box-sizing: border-box; /*khong con bi rot xuong hang nua*/
+}
+
+
+html, body{
+    /* nhieu hon mot tu thi dat trong ' ', khong thi khoi */
+    font-family: 'Times New Roman', Times, serif; /*font-family: thuong dung cho ca trang web */
+}
+
+.clear{  /*class nay de xoa hieu ung cua float*/
+    clear: both; /*xoa hieu ung cua float */
+}
+
+/* HEADER */
+.header img{
+    width: 250px;
+}
+
+.header ul{
+    list-style: none;
+    background-color: black;
+    padding: 15px 0px;
+    margin: 5px 0px 10px;
+    
+}
+
+/* Goi tu ong den cha den con */
+.header ul li a{
+    text-decoration: none;
+    color: white; 
+    font-size: 18px; 
+}
+
+/* tai sao cac text nam trong the a nhung lai thay doi li?
+->do the li(the block) la nguyen nhan dan den cac text rot xuong hang
+the a(the inline) */
+.header ul li{
+    display: inline;
+    /* top, bottom, right, left
+    margin: 20px;
+
+    /* top, bottom: 20px; right, left:10px */
+    /* margin: 20px 10px; */
+    /* top: 10px; right, left: 20px; bottom: 30px */
+    /* margin: 10px 20px 30px; */
+    /* top right bottom left */
+    /* margin: 10px 20px 30px 40px; */
+    margin: 0px 10px;
+}
+
+
+
+.carousel{
+    background-image: url(../images/slider_1.jpg);
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 610px;
+}
+
+
+
+
+
+/* INTRO */
+.intro__text{
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 30px;
+}
+.intro__text span{
+    color: red;
+    font-weight: bold;
+}
+.intro__left, .intro__right, .intro__smallItem{
+    float: left;
+    width: 50%;
+} 
+.intro__item img{
+    width: 100%;
+    display: block;
+}
+.intro__item{
+    padding: 0px 15px 20px;
+}
+
+/* PRODUCTS */
+.products{
+    margin-bottom: 70px;
+}
+.products h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.products__item{
+    float: left; 
+    width: 25%;
+    padding: 0 10px;
+}
+.products__item img{
+    width: 100%; 
+}
+.products h3{
+    font-size: 20px;
+}
+.products__item p{
+    font-size: 15px;
+}
+.products__item button{
+    background-color: rgb(251, 80, 80);
+    
+    border: 1.5px solid red;
+    border-radius: 5px; 
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+   
+    margin-top: 0px;
+    padding: 3px 10px;
+}
+
+/* BANNER */
+.banner{
+    background-image: url(/images/nature.jpg);
+    height: 400px;
+   
+    background-size: cover;
+    position: relative;
+}
+
+.banner__circle{
+    width: 260px;
+    height: 260px;
+    background-color: rgba(131, 41, 39, 0.662);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    /* opacity: 0.8; ->lam mo tat ca cac noi dung co trong the*/
+    position: absolute;
+    top: 38px;
+    left: 300px;
+}
+.banner__circle p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.banner__circle p:first-child{
+    font-size: 40px;
+    margin: 50px 0 0;
+}
+.banner__circle p:nth-child(2){
+    font-size: 80px;
+    margin: 0;
+}
+.banner__circle p:nth-child(3){
+    margin-bottom: 10px;
+}      
+    </style>
+
+    
     <!-- header -->
     <div class="header">
         <img src="./images/LOGO.png" alt="logo">
